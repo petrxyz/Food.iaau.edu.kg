@@ -1,0 +1,47 @@
+<% provide(:title, "Dinning") %>
+<div id="<%= "dining" if params[:controller] == "dinings" %>">
+
+  <div class="bckgrnd-grid">
+      <% @dinings.each do |dining| %>
+          <div class="row grid">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail dinning-container">
+                 <div class="c-d-text">
+
+                      <span class="db_title"><%= dining.day %></span><br/>
+                     <div>
+                       <div class="first-second">
+                         <span class="db_capt">First:</span>
+                             <p><%= dining.first %></p>
+                             <p><a href="#" class="thumbnail dinning-thumb">
+
+                               <img data-src=<%= link_to (image_tag (dining.firstimage) ),dining %>
+                               </a></p>
+                       </div>
+
+                       <div>
+                         <span class="db_capt">Second:</span>
+                            <p><%= dining.second %></p>
+                            <p><a href="#" class="thumbnail dinning-thumb">
+
+                              <img data-src=<%= link_to (image_tag (dining.secondimage) ),dining %>
+                            </a></p>
+                       </div>
+                     </div>
+                   <div>
+                     <span class="db_capt">Tea:</span>
+                        <p><a href="#" class="thumbnail dinning-thumb">
+                            <%= image_tag ("tea.jpg")%></a>
+                        </p>
+                   </div>
+                     <span class="db_capt">
+                            Price: <span class="db_title">50som</span>
+                     </span>
+
+                 </div>
+              </div>
+            </div>
+          </div>
+      <% end %>
+  </div>
+</div>

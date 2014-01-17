@@ -1,0 +1,29 @@
+<% provide(:title, "Canteen") %>
+<div id="<%= "canteen" if params[:controller] == "canteens" %>">
+  <div class="bckgrnd-grid">
+      <% @canteens.each do |canteen| %>
+        <div class="row grid">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail canteen-container">
+                <a href="#" class="thumbnail">
+                  <img data-src=<%= link_to (image_tag (canteen.imag), {:class=> "list-img"} ),canteen %>
+                </a>
+                  <div class="c-d-text">
+                      <span class="db_title"><%= canteen.title %></span>
+                      <p>
+                          <span class="db_capt">
+                            Info:
+                          </span>
+                            <span><%= canteen.info %></span><br/>
+                          <span class="db_capt">
+                            Cost:
+                          </span>
+                          <span style="font-weight: bold"><%= canteen.cost %><span class="glyphicon glyphicon-usd" style="font-size: 16px"></span><br/></span>
+                      </p>
+                  </div>
+              </div>
+            </div>
+         </div>
+       <% end %>
+  </div>
+</div>

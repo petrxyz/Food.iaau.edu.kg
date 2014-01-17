@@ -1,0 +1,119 @@
+.brand{
+    float: left;
+    margin-top: 14px;
+    padding-right: 3px;
+}
+.logo_bckrnd{
+    text-align: center;
+}
+
+.logo{
+    position: inherit;
+    width: 30em;
+    height: 15em;
+}
+
+.grid{
+    display: inline-flex;
+    text-align: left!important;
+
+}
+.bckgrnd-grid{
+    text-align: center;
+}
+
+.canteen-container{
+
+    width: 300px;
+    height: auto;
+    max-height: 500px;
+    margin-right: 20px;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+.c-d-text{
+    font-family: "Monaco", monospace;
+    text-align: center;
+}
+    .db_capt{
+     font-family: 'MS Sans Serif', sans-serif, Verdana, Arial;
+     color: darkorange;
+ }
+.db_title{
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    color: firebrick;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #888888;
+}
+.dinning-container{
+    width: auto;
+    min-width: 300px;
+    height: auto;
+    max-height: 500px;
+    margin-right: 20px;
+    margin-top: 2px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.dinning-title{
+    width:50px;
+
+}
+.first-second{
+    float: left;
+    margin-left: 30px;
+}
+ p:last-child{
+    margin:0px 0px -14px;
+}
+.dinning-text{
+    text-align: center;
+    margin-left: 10px;
+}
+.dinning-thumb{
+    width: 100px;
+    height: 100px;
+    margin-right: 3px;
+    display: inline-flex;
+
+}
+.list-img{
+    width: 150px!important;
+    height: 150px!important;
+}
+
+.cnop{
+    border-radius: 5px;
+    border: 2px solid #172437;
+    background-color: #7a899c;
+    height: 28px;
+    width: auto;
+    padding: 0px 10px 40px 10px;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+
+
+
+#selected{
+    background-color: rgba(0,0,0,0.3);
+}
+.abt-main{
+    font-family: Garamond;
+    font-size: 15px
+}
+.abt-text{
+
+}
+
+.img-cont{
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.img-cont img{
+    width: 200px;
+    height: 200px;
+}

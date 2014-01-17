@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body style="
+        background-image: url('assets/background.jpg');
+        background-repeat: repeat;
+        ">
+    <%= render 'layouts/header' %>
+    <div class="logo_bckrnd">
+      <%= image_tag ("food_logo.png"),{:class => 'logo'} %>
+    </div>
+    <div class="jumbotron container theme-showcase">
+       <div class="jumbotron" style=" background-color: #e9e8eb;">
+             <%= yield %>
+       </div>
+        <%= render 'layouts/footer' %>
+    </div>
+</body>
+</html>

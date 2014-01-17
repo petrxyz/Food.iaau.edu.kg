@@ -1,0 +1,98 @@
+<% provide(:title, 'About Us') %>
+
+<div>
+  <h1 style="margin-top: -30px"><strong>About us</strong></h1>
+  <p style="font-family: garamond;
+          font-size: 25px;text-align: center;">
+    This web site was created by COM-10 student's.
+  </p>
+
+
+
+    <div class="panel-group" style="text-align: center;" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              PETR GLADUNOV
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse ">
+          <div class="panel-body">
+            <div class="img-cont">
+              <%= image_tag ("petr.jpg"),{:class => 'img'} %>
+            </div>
+            <div class="abt-text">
+                <h3">Project Manager(Developer): Ruby Coder + Data base</h3>
+            </div>
+            <p>some text</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              NURBEK SYDYKOV
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="img-cont">
+              <%= image_tag ("nurbek.jpg"),{:class => 'img'} %>
+            </div>
+            <div class="abt-text">
+              <h3">HTML : CSS Designer</h3>
+            </div>
+            <p>some text</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+              ABBAS FATULLAEV
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="img-cont">
+              <%= image_tag ("abbas.jpg"),{:class => 'img'} %>
+            </div>
+            <div class="abt-text">
+              <h3">Javascript: Bootstrap</h3>
+            </div>
+            <p>some text</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+              AZIRET SAPARBEKOV
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="img-cont">
+              <%= image_tag ("aziret.jpg"),{:class => 'img'} %>
+            </div>
+            <div class="abt-text">
+              <h3">Test : Testing + Content Managing</h3>
+            </div>
+            <p>some text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</div>
